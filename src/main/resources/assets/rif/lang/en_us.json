@@ -1,0 +1,13 @@
+{
+  "text.autoconfig.rif.category.gameplay": "Reduced Invincibility Frames",
+  "text.autoconfig.rif.option.dmgReceiveExcludedEntities": "DamageReceiveExcludedEntities",
+  "text.autoconfig.rif.option.attackExcludedEntities": "AttackExcludedEntities",
+  "text.autoconfig.rif.option.iFrameDuration": "IFrame Duration",
+  "text.autoconfig.rif.option.attackCancelThreshold": "Attack Cancel Threshold",
+  "text.autoconfig.rif.option.knockbackCancelThreshold": "Knockback Cancel Threshold",
+  "text.autoconfig.rif.option.rapidAttackThreshold": "Rapid Attack Detection Time",
+  "text.autoconfig.rif.option.rapidAttackDamageFalloff": "Rapid Attack Damage Reduction",
+  "text.autoconfig.rif.option.maxRapidAttackCount": "Max Rapid Attack Count",
+  "text.autoconfig.rif.option.minRapidAttackDamage": "Minimum Rapid Attack Damage",
+  "text.autoconfig.rif.option.rapidAttackResetTime": "Rapid Attack Reset Time"
+}

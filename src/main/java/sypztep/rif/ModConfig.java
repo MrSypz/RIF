@@ -34,23 +34,23 @@ public class ModConfig implements ConfigData {
     @Comment("How many ticks of i-frames does an entity get when damaged, from 10 (default) 0.5 sec, to 2^31-1 (nothing can take damage)")
     public static int iFrameDuration = 10;
 
-    @ConfigEntry.Category("combat")
+    @ConfigEntry.Category("gameplay")
     @Comment("Time threshold in milliseconds for counting rapid attacks. Lower values make it harder to trigger rapid attack penalties")
     public static long rapidAttackThreshold = 250;
 
-    @ConfigEntry.Category("combat")
+    @ConfigEntry.Category("gameplay")
     @Comment("Damage reduction per rapid attack (0.2 = 20% reduction per hit). Set to 0 to disable")
     public static float rapidAttackDamageFalloff = 0.2f;
 
-    @ConfigEntry.Category("combat")
+    @ConfigEntry.Category("gameplay")
     @Comment("Maximum number of rapid attacks tracked for damage falloff")
     public static int maxRapidAttackCount = 5;
 
-    @ConfigEntry.Category("combat")
+    @ConfigEntry.Category("gameplay")
     @Comment("Minimum damage multiplier for rapid attacks (0.2 = 20% minimum damage)")
     public static float minRapidAttackDamage = 0.2f;
 
-    @ConfigEntry.Category("combat")
+    @ConfigEntry.Category("gameplay")
     @Comment("Time in milliseconds before rapid attack count starts resetting")
     public static long rapidAttackResetTime = 1000;
 }
