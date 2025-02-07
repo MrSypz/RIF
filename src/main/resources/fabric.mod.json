@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "rif",
+  "version": "${version}",
+  "name": "RIF",
+  "description": "RIF stands for 'Reduced Invincibility Frames.' The purpose of this mod is to reduce iFrame duration or disable it.",
+  "authors": [
+    "Sypztep"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/rif/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "sypztep.rif.Rif"
+    ],
+    "modmenu": [
+      "sypztep.rif.compat.ModMenuIntegration"
+    ],
+    "client": [
+      "sypztep.rif.client.RifClient"
+    ]
+  },
+  "mixins": [
+    "rif.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
