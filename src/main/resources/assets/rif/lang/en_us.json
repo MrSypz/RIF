@@ -1,4 +1,5 @@
 {
+  "text.autoconfig.rif.title": "Reduced Invincibility Frames Config",
   "text.autoconfig.rif.category.gameplay": "Reduced Invincibility Frames",
   "text.autoconfig.rif.option.dmgReceiveExcludedEntities": "DamageReceiveExcludedEntities",
   "text.autoconfig.rif.option.attackExcludedEntities": "AttackExcludedEntities",

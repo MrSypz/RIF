@@ -85,7 +85,7 @@ public class PlayerEntityMixin implements PlayerEntityAccessor {
 
 	@Inject(at = @At("HEAD"), method = "tick")
 	private void onTick(CallbackInfo ci) {
-		if (System.currentTimeMillis() - lastAttackTime > 1000) {
+		if (System.currentTimeMillis() - lastAttackTime > ModConfig.rapidAttackResetTime) {
 			rapidAttackCount = 0;
 		}
 	}
