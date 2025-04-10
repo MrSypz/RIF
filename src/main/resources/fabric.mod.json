@@ -28,7 +28,13 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": ">=1.21 <=${minecraft_version}",
+    "minecraft": "${minecraft_version}",
     "cloth-config2": ">=${cloth_config_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [ "library" ],
+      "update_checker": true
+    }
   }
 }

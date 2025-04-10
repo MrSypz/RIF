@@ -4,6 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -23,7 +24,7 @@ public abstract class LivingEntityMixin extends Entity {
 
 
     @Inject(at = @At("TAIL"), method = "applyDamage", cancellable = true)
-    private void onEntityHurt(DamageSource source, float amount, CallbackInfo ci) {
+    private void onEntityHurt(ServerWorld world, DamageSource source, float amount, CallbackInfo ci) {
         ActionResult result = EntityHurtCallback.EVENT.invoker().hurtEntity((LivingEntity) (Object) this, source,
                 amount);
         if (result == ActionResult.FAIL) {
