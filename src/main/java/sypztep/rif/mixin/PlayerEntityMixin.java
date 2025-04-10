@@ -57,7 +57,7 @@ public class PlayerEntityMixin implements PlayerEntityAccessor {
 	}
 
 	@Inject(at = @At("TAIL"), method = "applyDamage", cancellable = true)
-	private void onEntityHurt(ServerWorld world, DamageSource source, float amount, CallbackInfo ci) {
+	private void onEntityHurt(DamageSource source, float amount, CallbackInfo ci) {
 		ActionResult result = EntityHurtCallback.EVENT.invoker().hurtEntity((PlayerEntity) (Object) this, source, amount);
 		if (result == ActionResult.FAIL) {
 			ci.cancel();

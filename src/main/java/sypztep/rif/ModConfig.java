@@ -40,7 +40,7 @@ public class ModConfig implements ConfigData {
 
     @ConfigEntry.Category("gameplay")
     @Comment("Damage reduction per rapid attack (0.2 = 20% reduction per hit). Set to 0 to disable")
-    public static float rapidAttackDamageFalloff = 0.2f;
+    public static float rapidAttackDamageFalloff = 0.0f;
 
     @ConfigEntry.Category("gameplay")
     @Comment("Maximum number of rapid attacks tracked for damage falloff")
